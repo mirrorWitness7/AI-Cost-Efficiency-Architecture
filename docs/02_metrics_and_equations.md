@@ -52,3 +52,43 @@ Where:
   (pick something simple like 0.0005 min/token for your own sanity).
 
 The actual scale does not matter as long as you **use it consistently**.
+
+### Zombie Thread Penalty (Sᶻ)
+
+A **zombie thread** is a conversation that keeps reusing an old, overloaded
+context window instead of collapsing and restarting, even though most of that
+context is no longer relevant.
+
+We model a zombie penalty as:
+
+- Let **L_ctx** = total tokens in the current context window  
+- Let **L_max** = maximum healthy context length (team-defined, e.g. 4,000 tokens)  
+- Let **R_use** = fraction of context messages that are actually referenced in the last model output (0–1, can be approximate)  
+
+Define a zombie indicator:
+
+\[
+Z =
+\begin{cases}
+1 & \text{if } L_{ctx} > L_{max} \ \text{and} \ R_{use} < r_{min} \\
+0 & \text{otherwise}
+\end{cases}
+\]
+
+Where \( r_{min} \) is a small threshold such as 0.3 (only 30% of the
+context is really being used).
+
+We then extend the entropy score:
+
+\[
+S_{total} = S_{base} + \lambda_{z} \cdot Z + \lambda_{len} \cdot \max\left(0, \frac{L_{ctx} - L_{max}}{L_{max}}\right)
+\]
+
+- \( S_{base} \) = entropy from turns / resets / manual aborts (the existing rule)  
+- \( \lambda_{z} \) = fixed zombie penalty (e.g. 0.8–1.0)  
+- \( \lambda_{len} \) = length penalty weight (e.g. 0.3–0.5)
+
+Intuition:
+
+- If a thread is slightly long but still using most of its context, the penalty is small.  
+- If a thread is huge **and** barely using that history, we treat it as a zombie and strongly encourage a manual collapse + restart.

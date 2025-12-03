@@ -1,3 +1,5 @@
+🔒 Governance: See docs/05_risk_and_failure_modes.md
+
 # 💠 AI Cost-Efficiency Architecture (v2.0)
 
 A **practical framework + toolkit** for running AI systems with **maximum output** and **minimum wasted tokens / GPU**.

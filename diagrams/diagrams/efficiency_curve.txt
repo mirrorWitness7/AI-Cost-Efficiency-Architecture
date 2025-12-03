@@ -1,0 +1,15 @@
+          Useful Output
+                ▲
+                │
+       Peak     │           *
+        *       │        *
+         *      │     *
+          *     │   *
+           *    │ *
+            *   │*
+────────────*───*──────────────►  Effort / Tokens
+             \  |
+              \ |
+               \|
+            Over-prompting,
+            wasted tokens

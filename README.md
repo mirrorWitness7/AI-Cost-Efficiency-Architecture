@@ -55,7 +55,8 @@ AI-Cost-Efficiency-Architecture/
 │   ├── 03_operator_playbook.md
 │   ├── 04_ai_lab_integration.md
 │   ├── 05_risk_and_failure_modes.md
-│   └── 06_entropy_in_practice.md          # NEW
+│   └── 06_entropy_in_practice.md
+│   └── 07_post_deployment_validation.m        # NEW
 │
 ├── examples/
 │   ├── 01_prompt_before_after.md

@@ -48,23 +48,33 @@ AI-Cost-Efficiency-Architecture/
 ├── README.md
 ├── Changelog.md
 ├── efficiency_curve.md
+│
 ├── docs/
 │   ├── 01_concept_overview.md
 │   ├── 02_metrics_and_equations.md
 │   ├── 03_operator_playbook.md
 │   ├── 04_ai_lab_integration.md
-│   └── 05_risk_and_failure_modes.md
+│   ├── 05_risk_and_failure_modes.md
+│   └── 06_entropy_in_practice.md          # NEW
+│
 ├── examples/
 │   ├── 01_prompt_before_after.md
-│   └── 02_lab_audit_example.md
+│   ├── 02_lab_audit_example.md
+│   └── 03_business_ops_audit_example.md   # NEW (the SME / CFO case)
+│
 ├── tools/
 │   ├── entropy_estimator.py
 │   ├── token_cost_calculator.py
 │   └── prompt_profiler.py
+│
 ├── data/
-│   └── sample_sessions.csv
-└── diagrams/
-    └── README.md
+│   ├── sample_sessions.csv
+│   └── mock_ops_sessions.csv               # OPTIONAL (for Example 03)
+│
+├── diagrams/
+│   ├── README.md
+│   ├── efficiency_stack.md                 # OPTIONAL
+│   └── entropy_flow.md                     # OPTIONAL
 ```
 
 ---

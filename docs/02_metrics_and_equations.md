@@ -5,9 +5,7 @@ non‑math stakeholders.
 
 ## Core Efficiency
 
-\[
-E_{true} = \frac{O}{T_{visible} \times S}
-\]
+E_true = O / (T_visible × S)
 
 Where:
 

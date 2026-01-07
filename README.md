@@ -18,19 +18,30 @@ Here we turn those ideas into **something an AI lab, startup, or solo operator c
 
 We treat an AI system (humans + models + prompts) like an engine:
 
-\[
-E_{true} = \frac{O}{T_{visible} \times S}
-\]
+## 🧩 Core Idea
+
+We treat an AI system (humans + models + prompts) like an engine.
+
+**True efficiency is defined as:**
+
+E_true = O / (T_visible × S)
 
 Where:
 
 | Symbol | Meaning |
-|--------|---------|
-| `O` | Output – useful decisions, artifacts, resolved tickets, etc. |
-| `T_visible` | Visible effort – wall‑clock time, tokens, GPU seconds, operator time. |
-| `S` | Entropy / Scatter – rework, confusion, prompt spam, needless retries. |
+|------|---------|
+| O | Output – useful decisions, artifacts, resolved tickets |
+| T_visible | Visible effort – wall-clock time, tokens, GPU seconds, operator time |
+| S | Entropy / scatter – rework, confusion, retries, prompt spam |
 
-**Goal:** keep `O` high while pushing `T_visible` and `S` down.
+**Interpretation:**
+
+- High output alone does **not** mean efficiency  
+- Low token cost alone does **not** mean efficiency  
+- Confusion (entropy) multiplies cost non-linearly  
+
+**Goal:**  
+Keep **O** high while pushing **T_visible** and **S** down.
 
 This repo gives you:
 

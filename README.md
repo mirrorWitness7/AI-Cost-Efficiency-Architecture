@@ -115,6 +115,82 @@ You now have a **minimal viable efficiency lab**.
 
 ---
 
+## ⚠️ Disclaimer & Governance Boundaries
+
+This framework is designed to **measure structural efficiency and signal integrity**, not to guarantee truthfulness, correctness, or ethical behavior.
+
+---
+
+### What this framework **does**
+
+- Detects **structural inefficiency**, entropy accumulation, and cost–output mismatch.
+- Flags **physically implausible data**, suspiciously perfect logs, and hidden work.
+- Forces a **hard stop** when required variables (quality, effort, entropy) are missing.
+- Prevents AI systems from hallucinating efficiency metrics when data is incomplete.
+- Treats entropy as a **cost multiplier**, not a cosmetic metric.
+
+---
+
+### What this framework **does not** do
+
+- It does **not** detect collusive human behavior where all parties agree to inflate scores.
+- It does **not** verify factual correctness without external ground truth.
+- It does **not** replace financial audits, peer review, or institutional governance.
+- It does **not** claim scientific or academic validation.
+
+---
+
+### Governance Boundary (Critical)
+
+If the same individual or team both:
+1. Produces the work, **and**
+2. Grades the output quality (`O`),
+
+then the framework measures **internal consistency**, not external validity.
+
+In this configuration, results may appear mathematically sound while being strategically misleading.
+
+---
+
+### Recommended Mitigations
+
+To preserve audit integrity, at least one of the following must be true:
+
+- Separation of roles: **Operator ≠ Grader**
+- Periodic blind review by an independent party
+- Random spot-check audits of high-efficiency outputs
+- External anchors (customer feedback, revenue impact, defect rates)
+
+Without these, the framework should be treated as a **diagnostic tool**, not an audit authority.
+
+---
+
+### Core Principle
+
+This framework relies on **mathematical constraint**, not moral intent.
+
+It makes deception **harder to sustain**, not impossible.  
+It prevents false certainty, not bad faith.
+
+Use it as:
+- an **early-warning system**
+- a **logic gate**
+- a **governance constraint**
+
+Do **not** use it as a sole source of truth.
+
+---
+
+### Final Note
+
+Failure to calculate efficiency is itself a valid result.
+
+If the model refuses to compute, the system is signaling:
+> “You do not yet demonstrate operational clarity.”
+
+This is not an error.  
+This is the point.
+
 ## 🪪 License
 
 Creative Commons **BY‑SA 4.0** – you can use, remix, and build on this, as long as you credit and share alike.
